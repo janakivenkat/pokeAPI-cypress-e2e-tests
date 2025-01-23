@@ -1,0 +1,7 @@
+{
+  "validId": "1",
+  "invalidId": "9999",
+  "validBerryName": "cheri",
+  "invalidBerryName": "invalidBerryName",
+  "validFlavorName": "spicy"
+}

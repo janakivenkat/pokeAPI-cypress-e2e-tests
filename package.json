@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cypress": "^13.17.0",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/",
+    "nonGlobalStepDefinitions": true
+  }
+}
