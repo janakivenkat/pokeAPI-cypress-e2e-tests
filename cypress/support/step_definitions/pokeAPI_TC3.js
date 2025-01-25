@@ -30,5 +30,14 @@ Then('I find the berry with the highest potency from the spicy flavor', () => {
 
       const highestPotencyBerryName = highestPotencyBerry.berry.name;
       cy.wrap(highestPotencyBerryName).as('highestPotencyBerryName');
+      cy.log(highestPotencyBerryName);
+    });
+});
+
+//step to get details of high potency berry name that is fetched
+Then('I call the berry API with a fetched berry name', () => {
+  cy.get('@highestPotencyBerryName')
+    .then((highestPotencyBerryName) => {
+      berryAPI.getBerryDetails(highestPotencyBerryName).as('apiResponse');
     });
 });
